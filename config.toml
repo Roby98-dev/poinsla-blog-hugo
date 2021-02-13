@@ -1,0 +1,7 @@
+baseURL = "https://poinsla.xyz/"
+languageCode = "en-us"
+title = "Poinsla"
+paginate = 5
+
+[params]
+dateFormat = "2 Jan, 2006 | 3:04pm"

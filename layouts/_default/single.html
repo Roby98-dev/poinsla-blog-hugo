@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article>
+    <div class="jumbotron jumbotron-fluid masthead">
+        <div class="container">
+            <h1 class="display-5" data-aos="fade-up">{{ .Title }}</h1>
+            <div class="lead" data-aos="fade-up">
+                <span>Posted by: {{ .Params.author }}</span>
+                <span>&middot;</span>
+                <span>
+                    <time>{{ dateFormat .Site.Params.dateFormat .Date }}</time>
+                </span>
+            </div>
+            <hr class="my-2">
+            <p data-aos="fade-up">Tags:</p>
+            <p class="lead" data-aos="fade-up">
+                <span>
+                    {{ range (.GetTerms "Tags") }}
+                        <a class="btn btn-primary btn-lg" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+                    {{ end }}
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="container" data-aos="fade-up">
+        <div>{{ .Content }}</div>
+    </div>
+</article>
+{{ end }}
