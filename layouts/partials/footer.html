@@ -46,11 +46,12 @@
 </footer>
 <div class="copyright py-4 text-center text-white bg-dark">
     <div class="container">
-        <small>Copyright &#169; poinsla.xyz 2020 - <script>document.write(new Date().getFullYear());</script> | All Right Reserved.</small>
+        <p>{{ site.Params.copyright | markdownify }}</p>
     </div>
 </div>
 
 <script src="{{ .Site.BaseURL }}plugins/jquery/jquery.min.js"></script>
 <script src="{{ .Site.BaseURL }}plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="{{ .Site.BaseURL }}plugins/aos/aos.js"></script>
+<script src="{{ .Site.BaseURL }}plugins/typed/typed.min.js"></script>
 <script src="{{ .Site.BaseURL }}js/poinsla-site.js"></script>

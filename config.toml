@@ -4,4 +4,5 @@ title = "Poinsla"
 paginate = 5
 
 [params]
-dateFormat = "2 Jan, 2006 | 3:04pm"
+	dateFormat = "2 Jan, 2006 | 3:04pm"
+	copyright = "Copyright &copy; 2020 - 2021 [Poinsla.com](https://poinsla.com) All Rights Reserved"
