@@ -77,8 +77,6 @@ header
 */
 
 #navbar {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
     padding: 1.5rem 1.5rem;
     transition: 0.4s;
     -webkit-transition: 0.4s;
