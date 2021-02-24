@@ -1,44 +1,29 @@
-<!-- Contact form -->
-<section class="this-contact pt-5 pb-5 bg-light" id="contact">
-    <div class="container">
-        <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
-        <div class="row">
-            <div class="contact-form col-lg-8 mx-auto">
-                <form id="contactForm" name="sentMessage" novalidate="novalidate" action="mail.php">
-                    <div class="control-group">
-                        <div class="form-group controls mb-0 pb-2">
-                            <label>Name</label>
-                            <input class="form-control" type="text" id="name" required="" placeholder="Enter your name">
-                            <small class="form-text text-danger help-block"></small>
+    <section class="this-contact pt-5 pb-5 bg-light " id="contact ">
+        <div class="container">
+            <h2 class="text-uppercase text-center text-secondary mb-0">Contact Me</h2>
+            <div class="row">
+                <div class="contact-form col-lg-8 mx-auto">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="hidden" name="contact_number">
                         </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="form-group mb-0 pb-2">
-                            <label>Email Address</label>
-                            <input class="form-control" type="email" id="email" required="" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$">
-                            <small class="form-text text-danger help-block"></small>
+                        <div class="form-group">
+                            <label>Name:</label>
+                            <input class="form-control" type="text" name="from_name">
                         </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="form-group mb-0 pb-2">
-                            <label>Phone Number</label>
-                            <input class="form-control" type="tel" id="phone" required="" placeholder="Phone Number">
-                            <small class="form-text text-danger help-block"></small>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input class="form-control" type="email" name="to_name">
                         </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="form-group mb-5 pb-2">
-                            <label>Message</label>
-                            <textarea class="form-control" id="message" required="" placeholder="Message" rows="5"></textarea>
-                            <small class="form-text text-danger help-block"></small>
+                        <div class="form-group">
+                            <label>Message:</label>
+                            <textarea class="form-control" name="message"></textarea>
                         </div>
-                    </div>
-                    <div id="success"></div>
-                    <div class="form-group">
-                        <button type="submit" class="btn-success form-control" id="sendMessageButton" name="submit">Send Message</button>
-                    </div>
-                </form>
+                        <div class="form-group">
+                            <input class="btn btn-lg btn-success" type="submit" value="Send">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
